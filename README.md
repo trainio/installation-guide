@@ -51,7 +51,7 @@ sudo systemctl restart docker
 
 Install Cuda Toolkit (I am not sure if necessary) 
 
- 
+ https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#pre-installation-actions
 
 https://developer.nvidia.com/cuda-downloads 
 
