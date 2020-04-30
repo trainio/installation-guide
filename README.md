@@ -28,6 +28,7 @@ docker -v
  
 
 NVIDIA - Docker 
+https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)
 
 https://github.com/NVIDIA/nvidia-docker 
  
