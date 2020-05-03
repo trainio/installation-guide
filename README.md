@@ -6,13 +6,13 @@
 
 # A) UEFI/BIOS 
 
-    Set to "UEFI mode only" (no legacy/CSM). 
+Set to "UEFI mode only" (no legacy/CSM). 
 
-    Disable "secure boot" 
+Disable "secure boot" 
 
-    Disable "Intel Rapid Start" (if equipped) 
+Disable "Intel Rapid Start" (if equipped) 
 
-    Disable "fast boot" in UEFI (note this is different than the "fastboot" setting in Windows 8/10). The options in your UEFI/BIOS might say something like Full/Minimal/Automatic for boot mode. Select Full (or thorough, or complete, etc whatever your UEFI vendor has chosen to call it). 
+Disable "fast boot" in UEFI (note this is different than the "fastboot" setting in Windows 8/10). The options in your UEFI/BIOS might say something like Full/Minimal/Automatic for boot mode. Select Full (or thorough, or complete, etc whatever your UEFI vendor has chosen to call it). 
 
 # B) Advanced Power Options (Fastboot) 
 
