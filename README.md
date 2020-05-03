@@ -26,9 +26,9 @@ Refer to this video: https://www.youtube.com/watch?v=u5QyjHIYwTQ&t=194s
 ## Settings done from Windows  
 1. Run the command prompt, as admin
 2. type
-
+```
  powercfg.exe /hibernate off
-
+```
 and then press Enter. 
 
  
@@ -158,9 +158,9 @@ Test run Docker(type in Terminal)
  
 
 Check Docker version (type in Terminal) 
-
+```
  docker -v 
- 
+```
 
 More information: https://www.hostinger.com/tutorials/install-docker-on-ubuntu/ 
  
