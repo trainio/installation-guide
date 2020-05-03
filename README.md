@@ -19,9 +19,9 @@ Refer to this video: https://www.youtube.com/watch?v=u5QyjHIYwTQ&t=194s
 
 ## MINIMUM BIOS SETUP (do at least the following)
 
-FAST BOOT OFF
+- FAST BOOT: OFF
 
-SECURE BOOT OFF 
+- SECURE BOOT: OFF 
 
 ## Settings done from Windows  
 1. Run the command prompt, as admin
