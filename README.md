@@ -22,9 +22,8 @@ Refer to this video: https://www.youtube.com/watch?v=u5QyjHIYwTQ&t=194s
 
 MINIMUM BIOS SETUP 
 
-    FAST BOOT OFF 
-
-    SECURE BOOT OFF 
+FAST BOOT OFF 
+SECURE BOOT OFF 
 
 Windows  
 
@@ -32,7 +31,7 @@ Run the command prompt, as admin at type powercfg.exe /hibernate off, and then p
 
  
 
-# Prepare installation on PC 
+## Prepare installation on PC 
 
 Download .iso file of Ubuntu desktop 18.4 LTS: https://releases.ubuntu.com/bionic/ 
 
@@ -48,7 +47,7 @@ https://youtu.be/u5QyjHIYwTQ?t=112
 
  
 
-Create partition (at least 30 GB) 
+## Create partition (at least 30 GB) 
 
 Open Disk management 
 
@@ -57,10 +56,6 @@ Select your drive
 Right-click > Shrink Volume 
 
 Shrink eg. 80 Gb (remember to leave some empty space for Windows as well) 
-
- 
-
- 
 
 The most common "unmoveable" files are files which are locked during normal computer operation such as virtual memory/pagefile/system restore files as well as a few other files which may be open, but not running "in memory" 
 
@@ -88,7 +83,7 @@ https://www.youtube.com/watch?v=5MkmPLL5tQw
 
  
 
-# Ubuntu Installation 
+## Ubuntu Installation 
 
 Insert the USB stick (After previous steps the usb is unmounted as default) 
 
@@ -130,21 +125,20 @@ A menu should prompt and let you choose which environment you want to start
 
  
 
-#Install Nvidia drivers: 
+## Install Nvidia drivers: 
 
 Go to Ubuntu > Software & Updates —> additional drivers —> NVIDIA corporation: using NVIDIA drivers … 435 (proprietary, tested) 
 
  
  
 
-#Install Docker: 
+## Install Docker: 
 
 Update+Upgrade Ubuntu (type in Terminal) 
-
- sudo apt-get update 
-
- sudo apt-get upgrade 
- 
+```
+sudo apt-get update 
+sudo apt-get upgrade 
+```
 
 Install Docker(type in Terminal) 
 
@@ -175,7 +169,7 @@ More information: https://www.hostinger.com/tutorials/install-docker-on-ubuntu/
  
  
 
-#NVIDIA – Docker 
+## NVIDIA – Docker 
 
  
 
@@ -184,11 +178,12 @@ More information: https://www.hostinger.com/tutorials/install-docker-on-ubuntu/
 https://github.com/NVIDIA/nvidia-docker 
  
 
-#Install curl, type (in Terminal): 
+Install curl, type (in Terminal): 
 
 sudo apt install curl 
 
-# Add the package repositories  
+
+Add the package repositories  
 
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)  
 
@@ -203,7 +198,7 @@ sudo systemctl restart docker
 
  
 
-#Install nvidia-docker 2.0 
+## Install nvidia-docker 2.0 
 
 Type (in Terminal): 
 
@@ -218,7 +213,7 @@ docker run --runtime=nvidia –rm nvidia/cuda nvidia-smi
  
  
 
-#Check CUDA version  
+## Check CUDA version  
 
 Type (to Terminal): 
 
@@ -228,14 +223,13 @@ If the drivers were installed correctly you should see info table about your GPU
 
  
 
-#Install Cuda Toolkit (I am not sure if necessary) 
+## Install Cuda Toolkit (I am not sure if necessary) 
 
 https://developer.nvidia.com/cuda-downloads 
 
  
  
-
-#Then restart 
+Then restart 
 
 #### Test nvidia-smi with the latest official CUDA image 
 
@@ -245,7 +239,7 @@ sudo docker run --gpus all nvidia/cuda:10.0-base nvidia-smi
 
  
 
-#Run ML project 
+## Run ML project 
 
 You can easily run ML project if they provide Docker file: 
 
@@ -259,7 +253,7 @@ This will download all files and data needed to run the project
 
  
 
-#Getting started with Docker 
+## Getting started with Docker 
 
 List all containers in your Docker, type (in Terminal): 
 
