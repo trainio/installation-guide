@@ -24,10 +24,8 @@ SECURE BOOT OFF
 
 ## Settings done from Windows  
 1. Run the command prompt, as admin
-2. type 
-´´´
+2. type
  powercfg.exe /hibernate off
-´´´
 and then press Enter. 
 
  
