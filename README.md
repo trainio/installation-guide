@@ -1,10 +1,10 @@
-## How to install Linux Ubuntu alongside Windows 10 (+ extras) 
+# How to install Linux Ubuntu alongside Windows 10 (+ extras) 
 
  
 
-# Before the installation: 
+## Before the installation: 
 
-# A) UEFI/BIOS 
+## A) UEFI/BIOS 
 
 Set to "UEFI mode only" (no legacy/CSM). 
 
@@ -14,7 +14,7 @@ Disable "Intel Rapid Start" (if equipped)
 
 Disable "fast boot" in UEFI (note this is different than the "fastboot" setting in Windows 8/10). The options in your UEFI/BIOS might say something like Full/Minimal/Automatic for boot mode. Select Full (or thorough, or complete, etc whatever your UEFI vendor has chosen to call it). 
 
-# B) Advanced Power Options (Fastboot) 
+## B) Advanced Power Options (Fastboot) 
 
 Disable fastboot in Windows 8/10 under "advanced power options". Restart computer to ensure that this subsequent boot and the next reboot/shutdown will be in "normal" mode. 
 
