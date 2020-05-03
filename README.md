@@ -180,12 +180,13 @@ https://github.com/NVIDIA/nvidia-docker
  
 
 Install curl, type (in Terminal): 
-
+```
 sudo apt install curl 
+```
 
 
 Add the package repositories  
-
+```
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID)  
 
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -  
@@ -196,20 +197,25 @@ curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.li
 sudo apt-get update && sudo apt-get install -y nvidia-container-toolkit  
 
 sudo systemctl restart docker 
+```
 
  
 
 ## Install nvidia-docker 2.0 
 
 Type (in Terminal): 
+```
 
 sudo apt-get install nvidia-docker2  
 
 sudo pkill –SIGHUP dockerd 
+```
 
 Test Nvidia-Docker, type (in Terminal):  
+```
 
 docker run --runtime=nvidia –rm nvidia/cuda nvidia-smi 
+```
 
  
  
@@ -217,8 +223,10 @@ docker run --runtime=nvidia –rm nvidia/cuda nvidia-smi
 ## Check CUDA version  
 
 Type (to Terminal): 
+```
 
 nvidia-smi 
+```
 
 If the drivers were installed correctly you should see info table about your GPU and the version of installed driver + CUDA version (should be 10.1) 
 
@@ -233,8 +241,9 @@ https://developer.nvidia.com/cuda-downloads
 Then restart 
 
 #### Test nvidia-smi with the latest official CUDA image 
-
+```
 sudo docker run --gpus all nvidia/cuda:10.0-base nvidia-smi 
+```
  
  
 
@@ -247,8 +256,9 @@ You can easily run ML project if they provide Docker file:
 For example, try this: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/docker.md 
 
 Type (in Terminal): 
-
+```
 sudo nvidia-docker run -it -p 8097:8097 taesungp/pytorch-cyclegan-and-pix2pix 
+```
 
 This will download all files and data needed to run the project 
 
@@ -257,9 +267,11 @@ This will download all files and data needed to run the project
 ## Getting started with Docker 
 
 List all containers in your Docker, type (in Terminal): 
-
+```
 docker image ls -all  
+```
 
 Remove/Delete Docker containers, type (in Terminal): 
-
+```
 docker image rm <name_of_container_file> 
+```
