@@ -6,13 +6,10 @@
 
 ## A) UEFI/BIOS 
 
-Set to "UEFI mode only" (no legacy/CSM). 
-
-Disable "secure boot" 
-
-Disable "Intel Rapid Start" (if equipped) 
-
-Disable "fast boot" in UEFI (note this is different than the "fastboot" setting in Windows 8/10). The options in your UEFI/BIOS might say something like Full/Minimal/Automatic for boot mode. Select Full (or thorough, or complete, etc whatever your UEFI vendor has chosen to call it). 
+1. Set to "UEFI mode only" (no legacy/CSM). 
+2. Disable "secure boot" 
+3. Disable "Intel Rapid Start" (if equipped) 
+4. Disable "fast boot" in UEFI (note this is different than the "fastboot" setting in Windows 8/10). The options in your UEFI/BIOS might say something like Full/Minimal/Automatic for boot mode. Select Full (or thorough, or complete, etc whatever your UEFI vendor has chosen to call it). 
 
 ## B) Advanced Power Options (Fastboot) 
 
@@ -20,14 +17,18 @@ Disable fastboot in Windows 8/10 under "advanced power options". Restart compute
 
 Refer to this video: https://www.youtube.com/watch?v=u5QyjHIYwTQ&t=194s 
 
-MINIMUM BIOS SETUP 
+## MINIMUM BIOS SETUP (do at least the following)
 
 FAST BOOT OFF 
 SECURE BOOT OFF 
 
-Windows  
-
-Run the command prompt, as admin at type powercfg.exe /hibernate off, and then press Enter. 
+## Settings done from Windows  
+1. Run the command prompt, as admin
+2. type 
+´´´
+powercfg.exe /hibernate off
+´´´
+and then press Enter. 
 
  
 
