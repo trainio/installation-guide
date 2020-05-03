@@ -268,10 +268,10 @@ This will download all files and data needed to run the project
 
 List all containers in your Docker, type (in Terminal): 
 ```
-docker image ls -all  
+sudo docker image ls --all  
 ```
 
 Remove/Delete Docker containers, type (in Terminal): 
 ```
-docker image rm <name_of_container_file> 
+sudo docker image rm <name_of_container_file> 
 ```
