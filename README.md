@@ -26,7 +26,7 @@ SECURE BOOT OFF
 1. Run the command prompt, as admin
 2. type 
 ´´´
-powercfg.exe /hibernate off
+ powercfg.exe /hibernate off
 ´´´
 and then press Enter. 
 
