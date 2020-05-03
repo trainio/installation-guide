@@ -35,27 +35,27 @@ and then press Enter.
 
 ## Prepare installation on PC 
 
-Download .iso file of Ubuntu desktop 18.4 LTS: https://releases.ubuntu.com/bionic/ 
+1. Download .iso file of Ubuntu desktop 18.4 LTS: https://releases.ubuntu.com/bionic/ 
 
-Download and install Balena Etcher: https://www.balena.io/etcher/ 
+2. Download and install Balena Etcher: https://www.balena.io/etcher/ 
 
-Format a USB flash drive in FAT32 
+3. Format a USB flash drive in FAT32 
 
 Windows File Explorer > Select Disk > Right click > Format 
 
-Use Etcher to flash the USB stick with the Ubuntu .iso file 
+4. Use Etcher to flash the USB stick with the Ubuntu .iso file 
 
-https://youtu.be/u5QyjHIYwTQ?t=112 
+See more information: https://youtu.be/u5QyjHIYwTQ?t=112 
 
  
 
 ## Create partition (at least 30 GB) 
 
-Open Disk management 
+1. Open Disk management 
 
-Select your drive 
+2. Select your drive 
 
-Right-click > Shrink Volume 
+3. Right-click > Shrink Volume 
 
 Shrink eg. 80 Gb (remember to leave some empty space for Windows as well) 
 
@@ -87,13 +87,13 @@ https://www.youtube.com/watch?v=5MkmPLL5tQw
 
 ## Ubuntu Installation 
 
-Insert the USB stick (After previous steps the usb is unmounted as default) 
+1. Insert the USB stick (After previous steps the usb is unmounted as default) 
 
-Reboot your PC 
+2. Reboot your PC 
 
-Go to the bios (usually F12 or Del at boot) 
+3. Go to the bios (usually F12 or Del at boot) 
 
-Select “try Ubuntu without installing”  
+4. Select “try Ubuntu without installing”  
 
 If Ubuntu crashes: try to add nomodeset to grub file, see instructions here:  
 
@@ -101,21 +101,18 @@ https://www.youtube.com/watch?time_continue=40&v=Tg4fWsFPzSE&feature=emb_title
 
  
 
-Launch “install Ubuntu” shortcut on the desktop 
+5. Launch “install Ubuntu” shortcut on the desktop 
 
-Normal install and select “download updates while installing Ubuntu” 
-
-If you get a message “do you want to unmount …",  click Yes 
-
-Option 1: select “Install Ubuntu alongside Windows Boot Manager”  
-
-Follow the instructions and complete the installation 
+- Normal install and select “download updates while installing Ubuntu” 
+- If you get a message “do you want to unmount …",  click Yes 
+- Option 1: select “Install Ubuntu alongside Windows Boot Manager”  
+- Follow the instructions and complete the installation 
 
  
 
-Shutdown and Restart  
+6. Shutdown and Restart to BIOS
 
-Enter the bios again and choose to boot from your Ubuntu partition 
+7. Enter the BIOS again and choose to boot from your Ubuntu partition 
 
 A menu should prompt and let you choose which environment you want to start 
 
@@ -143,17 +140,19 @@ sudo apt-get upgrade
 ```
 
 Install Docker(type in Terminal) 
+```
+ sudo apt install docker.io
+```
 
- sudo apt install docker.io 
-  
 
 Test run Docker(type in Terminal) 
-
+```
  sudo systemctl start docker 
 
  sudo systemctl enable docker 
 
  sudo systemctl status docker 
+```
 
  Press CTRL+C to exit 
  
